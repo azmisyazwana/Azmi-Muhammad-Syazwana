@@ -1,10 +1,19 @@
+import java.util.Scanner;
+
 public class Problem7 {
+
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        int n = scan.nextInt();
+
+        for(int i = 1; i <= n; i++){
+            System.out.print(" ".repeat(n-i));
+            System.out.print("* ".repeat(i));
+            System.out.print(" ".repeat(n-i));
+            System.out.println();
+        }
 
     }
 }
-    *      4s 1b 4s
-   * *     3s 1b 1s 1b 3s
-  * * *    2s 1b 1s 1b 1s 2b
- * * * *   1s 1b 1s 1b 1s 1b 1s
-* * * * *  1b 1s 1b 1s 1b 1s 1b 1s 1b
+
